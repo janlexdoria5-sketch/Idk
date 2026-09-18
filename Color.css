@@ -1,0 +1,168 @@
+body {
+min-height: 100vh;
+background-image: url("background.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+#photo {
+    
+    
+    position: relative;
+    top: 25vh;
+    right: 30%; 
+    transform: translateX(50%);
+    width: 60vw;
+   height: 45vh;
+   object-fit: cover ;
+   overflow: visible;
+   
+    }
+    
+#photoContainer {
+    position: absolute;
+    bottom: 25vh;
+    right: 5vw;
+}
+#letterDiv {
+    position: relative;
+    top: 5vh;
+    left: 0vw;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    width: 75vw;
+    height: 90vh;
+    border-radius: 25px;
+}
+#board {
+    position: absolute;
+    top: 1vh;
+    left: 0vw;
+    backdrop-filter: blur(2px);
+    background: rgba(11, 31, 77, 0.8);
+    border-radius: 25px;
+    height: 5vh;
+    width: 110%;
+    
+}
+#movetext{
+    font-family: serif;
+    position: relative;
+    top: -1vh;
+    left: 0vw;
+    color: #FFFFFF;
+    text-shadow:
+     0 0 10px #FFFFFF,
+     0 0 20px #FFFFFF,
+     0 0 30px #FFFFFF;
+             
+    animation: move 7s linear
+     infinite;
+    font-size: 2vh;
+}
+
+@keyframes move {
+    from { transform:translateX(0vw) scaleX(2);}
+    to { transform:translateX(150vw)
+    scaleX(2);}
+    
+    
+}
+#h1 {
+    color: #4A0000;
+    font-size: clamp(35px, 20vw, 200px);
+    font-size: clamp(30px, 5vh, 500px);
+    font-family: cursive;
+    font-weight: 900;
+    -webkit-text-stroke: 3px #4A0000;
+    letter-spacing: clamp(-10px, 1vw, 20px);
+    margin-left: 1vw;
+    transform: scaleX(2vw);
+}
+#H { 
+    font-family: cursive;
+    color: #4A0000;
+    font-size: clamp(80px, 20vh,
+        150px);
+    margin-right: clamp(-20px, -6vw, -40px);
+    font-weight: 900;
+    margin-left: 1vw;
+}
+
+#letter {
+    display: none;
+}
+#passdiv {
+    background-image:
+    url("passback.jpg");
+    
+   min-height: 100dvh;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    inset: 0;
+}
+#passbar {
+    position: absolute;
+    bottom: clamp(45%, 10vw, 65%);
+    left: 10%;
+   
+   width: 80vw;
+   height: clamp(80px, 90px, 240px);
+    
+    border-radius: 25%;
+    border-color: pink;
+    border-size: 20px;
+    
+    font-size: clamp(45px, 70px, 130px);
+    
+    background-color: #FF69B4;
+    
+}
+#enter {
+    position: relative;
+    top: clamp(25%, 30%, 40%);
+    left: 40%;
+    transform: translateY(80%);
+    
+    width: 25vw;
+    height: clamp(50px, 100px, 200px);
+    
+    border-radius: 25%;
+    border-color: pink;
+    border-size: 15px;
+    
+    background-color: #FF69B4;
+    
+    font-size: 20px;
+    font-family: serif;
+    
+    
+    
+}
+#pasen {
+    position: relative;
+    top: 5%;
+    left: 15%; 
+   
+   color: black;
+   text-shadow:  
+    0 0 5px #E11D48,
+    0 0 10px #E11D48,
+    0 0 15px #E11D48;
+    
+    
+    
+    width: 50vw;
+    heigh: 20vh;
+    
+}
+@media (min-width: 1024px) {
+    #passbar {
+        bottom: 55%;
+    }
+    
+}
